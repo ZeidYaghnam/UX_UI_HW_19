@@ -1,0 +1,235 @@
+nav{
+    padding: 1%;
+}
+
+p{
+    font-family: helvetica;
+}
+
+.heroImg{
+    height: 150px;
+    padding:25px;
+    margin:0 auto;
+}
+
+footer{
+    background-color: rgb(45,45,45);
+    padding: 1%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-left:50%
+}
+
+#intro{
+   font-family: helvetica, sans-serif;
+   text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    color: white;
+    font-family: helvetica, sans-serif;
+}
+
+#navWrapper{
+    background-color: rgb(45, 45, 45);
+}
+
+.heading{
+    display: flex;
+    font-family: helvetica, sans-serif;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 28px;
+}
+
+#subHead{
+    display: flex;
+    justify-content: center;
+}
+
+#resume{
+    display: flex;
+    justify-content: center;
+}
+
+section#mySkills article{
+    max-height: 620px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    border: 2px solid red;
+    flex-wrap: column;
+    justify-content: space-between;
+}
+
+.imageContainerR,
+.imageContainerL{
+    display: flex;
+    flex-shrink: 1;
+    border: 2px solid green;
+    width: 50%;
+    max-height: 620px;
+}
+
+.descriptionR,
+.descriptionL{
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    margin: 50px;
+    border: 2px solid blue;
+    width: 50%;
+    align-self: center;
+}
+
+.desc{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 25px 50px;
+}
+
+h2.skills{
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#gridContainer{
+    margin: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px;
+    grid-template-areas: 
+    "project1 project2 project3"
+    "p1Text p2Text p3Text";
+}
+
+#project1{
+    grid-area: project1;
+    background-image: url("../Images/Jump\ link\ covers-01.jpg");
+    margin: 2%;
+    background-size: cover;
+}
+
+#project2{
+    grid-area: project2;
+    background-image: url("../Images/Jump\ link\ covers-03.jpg");
+    margin: 2%;
+    background-size: cover;
+}
+
+#project3{
+    grid-area: project3;
+    background-image: url("../Images/Jump\ link\ covers-02.jpg");
+    margin: 2%;
+    background-size: cover;
+}
+
+#p1Text{
+    grid-area: p1Text;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+#p2Text{
+    grid-area: p2Text;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+#p3Text{
+    grid-area: p3Text;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.work{
+    font-family: helvetica;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600){
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 2%
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    .heading{
+        display: flex;
+        font-family: helvetica, sans-serif;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    #gridContainer{
+        margin: 25px;
+        display: grid;
+        /* grid-auto-flow: column; */
+        grid-template-rows: 300px 100px 300px 100px 300px 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "project1"
+        "p1Text"
+        "project2"
+        "p2Text"
+        "project3"
+        "p3Text"
+    }
+
+    #project1{
+        grid-area: project1;
+        background-image: url("../Images/Jump\ link\ covers-01.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #project2{
+        grid-area: project2;
+        background-image: url("../Images/Jump\ link\ covers-03.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #project3{
+        grid-area: project3;
+        background-image: url("../Images/Jump\ link\ covers-02.jpg");
+        margin: 2%;
+        background-size: cover;
+    }
+    
+    #p1Text{
+        grid-area: p1Text;
+        text-align: center;
+        font-family: Helvetica;
+    }
+    
+    #p2Text{
+        grid-area: p2Text;
+        text-align: center;
+        font-family: Helvetica;
+    }
+    
+    #p3Text{
+        grid-area: p3Text;
+        text-align: center;
+        font-family: Helvetica;
+    }
+}
