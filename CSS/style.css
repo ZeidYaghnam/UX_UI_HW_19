@@ -50,6 +50,10 @@ ul li{
     font-weight: bold;
 }
 
+#p1Text a{
+    color: black;
+}
+
 a:link{
     color: white;
     text-decoration: none;
